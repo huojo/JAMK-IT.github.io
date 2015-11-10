@@ -18,6 +18,8 @@ body {
   .header h1 {
     font-size: 5em;
     color: white; }
+  .header p {
+    color: white; }
 
 .info {
   min-height: 20vh;
@@ -37,6 +39,7 @@ body {
     flex-direction: row;
     justify-content: center; }
     .list article ul {
+      list-style: none;
       margin-top: 15px;
       padding-left: 0; }
 
@@ -51,5 +54,7 @@ body {
     color: white; }
   .footer ul {
     padding-left: 0; }
+  .footer p {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
