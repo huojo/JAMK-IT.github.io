@@ -23,14 +23,22 @@ body {
   min-height: 20vh;
   text-align: center;
   padding: 20px; }
+  .info p {
+    margin: 15px auto;
+    max-width: 420px; }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   min-height: 20vh;
   background-color: #7E8AA2;
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
+  .list article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .list article ul {
+      margin-top: 15px;
+      padding-left: 0; }
 
 .footer {
   display: flex;
@@ -41,5 +49,7 @@ body {
   background-color: #0D0D0D; }
   .footer ul li {
     color: white; }
+  .footer ul {
+    padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
