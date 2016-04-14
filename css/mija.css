@@ -1,0 +1,34 @@
+/* @license
+ * MyFonts Webfont Build ID 2571387, 2013-06-03T06:12:01-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Mija Bold by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/mija/bold/
+ * 
+ * Webfont: Mija Small Caps by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/mija/sc/
+ * 
+ * Webfont: Mija Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/mija/italic/
+ * 
+ * Webfont: Mija by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/mija/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2571387
+ * Webfonts copyright: Copyright (c) 2011 by Miguel Hern&#x0087;ndez. All rights reserved.
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("http://hello.myfonts.net/count/273c7b");
+  
+@font-face {font-family: 'Mija';src: url('../static/fonts/273C7B_3_0.eot');src: url('../static/fonts/273C7B_3_0.eot?#iefix') format('embedded-opentype'),url('../static/fonts/273C7B_3_0.woff') format('woff'),url('../static/fonts/273C7B_3_0.ttf') format('truetype');}
+ 

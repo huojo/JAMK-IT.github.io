@@ -1,0 +1,13 @@
+{
+	"showcases": [{
+		"url": "http://n4sjamk.github.io/contriboard/",
+		"name": "Contriboard",
+        "description": "Digitize ideas together while brainstorming. Fast open-source brainstorming tool for everyone.",
+        "image_url": "https://camo.githubusercontent.com/d99c7d8a2c16b9ece6253bfb3b2c83ad0d9c7f87/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f386367683439756a6b7439386571742f4d756c7469706c65426f61726473496e576f726b73706163652e6a70673f646c3d31"
+	}, {
+		"url": "https://github.com/N4SJAMK/teamboard-meta/wiki/about-production-environment",
+		"name": "Reference Production Environment",
+        "description": "For efficient teamwork and development we use and improve a toolchain of several software components. Our working methods are inspired by DevOps and LEAN practices.",
+        "image_url": "https://n4sjamk.github.io/img/corollakuva.jpg"
+	}]
+}

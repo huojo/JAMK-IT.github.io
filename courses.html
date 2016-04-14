@@ -14,6 +14,22 @@
 </head>
 
 <body>
+<div id="modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2 id="modalheader">&nbsp;</h2>
+    </div>
+    <div class="modal-body" id="modalcontent">
+    </div>
+    <div class="modal-footer" id="modalfooter">
+    </div>
+  </div>
+
+</div>
+    
 <div class="wrapper">
     <div class="content-full-width">
           <div class="row" id="headerbar">
@@ -22,7 +38,7 @@
                 </a>
               
                 <a href="/courses.html">
-                    <div class="item item-header">Courses</div>
+                    <div class="item item-header item-active">Courses</div>
                 </a>
               
                 <a href="/showcases.html">
@@ -33,34 +49,18 @@
           <div class="row" id="jumbo">
             <div class="container">
                 <div class="jumbo-textcontent">
-                    <h1>JAMK-IT on GitHub</h1>
-                    <h3>JAMK-IT is a Github organization for JAMK University of Applied Sciences used for educational purposes. There will be repositories for courses and for student projects as well.</h3>
+                    <h1>Courses</h1><br>
+                    <h3>In learning you will teach, and in teaching you will learn.</h3>
                 </div>
             </div>
         </div>
     </div>
     
   <div class="container">
-    <div class="row" id="balls">
-        <div class="div3">
-            <div class="ball-item" id="counts"><h1 id="repositoriescount" class="number">0</h1>Courses</div>
-            <div class="text-item">There are some great courses available. You should check them out!</div>
-            <div class="text-item-link"><i class="fa fa-chevron-right"></i> <a href="courses.html">See all courses</a></div>
-        </div>
-        
-        <!--
-        <div class="div3">
-            <div class="ball-item" id="counts"><h1 id="documentscount" class="number">0</h1> Documents</div>
-            <div class="text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-            <div class="text-item-link"><i class="fa fa-chevron-right"></i> <a href="documents.html">Go to documents</a></div>
-        </div>
-        -->
-        
-        <div class="div3">
-            <div class="ball-item" id="counts"><h1 id="showcasescount" class="number">0</h1>Showcases</div>
-            <div class="text-item">Take a closer look at the things we and the JAMK students have created.</div>
-            <div class="text-item-link"><i class="fa fa-chevron-right"></i> <a href="showcases.html">All showcases</a></div>
-        </div>
+    <div class="row" id="search">
+        <input type="text" name="search" placeholder="Find a course..."/>
+    </div>
+    <div class="row" id="repositorylist">
     </div>
   </div>
     
@@ -80,6 +80,8 @@
   </div>   
 </div>
     <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/scripts_index.js"></script>
+    <script src="js/jquery.timeago.js"></script>
+    <script src="js/showdown.min.js"></script>
+    <script src="js/scripts_courses.js"></script>
 </body>
 </html>

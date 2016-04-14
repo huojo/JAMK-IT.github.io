@@ -1,0 +1,30 @@
+{
+	"repositories": [{
+		"url": "https://github.com/JAMK-IT/IIZP2010-system-project",
+		"name": "IIZP2010 Järjestelmäprojekti"
+	}, {
+		"url": "https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing",
+		"name": "TT0S0100 Ohjelmistosuunnittelu ja testaus"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO123000-testing-course",
+		"name": "IIO123000 testing course"
+	}, {
+		"url": "https://github.com/JAMK-IT/TTKS0300-script-programming",
+		"name": "TTKS0300 - Script Programming"
+	}, {
+		"url": "https://github.com/JAMK-IT/TTTS0400-linux-servers",
+		"name": "TTTS0400 - Linux Servers"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO50200-game-programming",
+		"name": "IIO50200 & IIO50101 - Game Development Module"
+	}, {
+		"url": "https://github.com/JAMK-GameDev",
+		"name": "JAMK GAMEDEV organization"
+	}, {
+		"url": "http://jamk-it.github.io/challenge_factory_2016",
+		"name": "Challenge Factory 2016"
+	},{
+        "url": "https://github.com/JAMK-IT/template-course",
+        "name": "Template course"
+    }]
+}

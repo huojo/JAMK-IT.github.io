@@ -1,0 +1,400 @@
+*{
+    font-family: 'Mija';
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    position: relative;
+    min-height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 auto;
+}
+
+.content-full-width{
+    width: 100%;
+}
+
+#jamk-it-logo-header{
+    font-size: 1.5em;
+}
+
+#jamk-it-logo-header img{
+    max-height: 25px;
+    margin-right: 10px;
+}
+
+.row{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.noscroll{
+    overflow: hidden;
+}
+
+.item.item-header{
+    height: 25px;
+    padding: 10px 20px 10px 20px;
+    color: #FFFFFF;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+.item.item-header.item-active{
+    background-color: #1A6196;
+}
+
+#headerbar, #headerbar a{
+    background-color: #00497D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#jumbo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    background-image: url('/static/images/jamk-image.jpg');
+    background-color: rgba(255,255,255,0.5);
+    background-size: cover;
+}
+
+.jumbo-textcontent h1{
+    background: rgba(255,255,255,0.7);
+    color: #00497D;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: normal;
+}
+
+.jumbo-textcontent h3{
+    background: rgba(255,255,255,0.7);
+    color: #000000;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: normal;
+}
+
+#counts{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#counts h2{
+    color: #00497D;
+    font-weight: normal;
+}
+
+#balls{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#showcaselist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+#repositorylist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.ball-item {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  background: #ED1E79;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 170px;
+  border-radius: 170px;
+}
+
+.div3{
+    max-width: 33%;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div3 .text-item{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.div3 img{
+    max-width: 100%;
+    max-height: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*.div3.div3-lines:not(:first-child){*/
+.div3.div3-lines:nth-child(3n+2){
+    border-left: 1px solid #D2D2D2;
+    border-right: 1px solid #D2D2D2;
+}
+
+.div3.div3-line-under{
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.div3.div3-spaced{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.text-item-link a, .text-item-link{
+    color: #00497D;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#search{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#search input{
+    color: #000000;
+    border: 1px solid #9C9C9C;
+    height: 2em;
+    background: url('/static/images/magnifying_glass.png') no-repeat scroll 5px 5px;
+    background-color: #F2F2F2;
+    padding-left:30px;
+}
+
+.number{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.fa-chevron-right{
+    color: #00497D;
+}
+
+.fa-code-fork{
+    margin-left: 5px;
+}
+
+#footer{
+    margin-top: 75px;
+    background-color: #171717;
+    height: 200px;
+    justify-content: center;
+}
+
+.footer-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#jamk-logo{
+    height: 70px;
+    width: 300px;
+    background-image: url('/static/images/jamk_fi_tunnus_valkoinen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact{
+    color: #FFFFFF;
+    line-height: 1.3rem;
+    font-size: 0.8em;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.repoinfo{
+    color: #6F6F6F;
+    font-size: 0.9em;
+}
+
+.repolink{
+    cursor: pointer;
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #1A6196;
+    color: white;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    max-height: 70vh;
+    font-size: 0.85rem;
+}
+
+.modal-footer {
+    padding: 25px 0px 15px 0px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: white;
+}
+
+a.button{
+    text-align: center;
+    background-color: #00497D;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+
+@media screen and (max-width: 720px) {
+    #headerbar{
+        flex-direction: column;
+    }
+    
+    #balls{
+        flex-direction: column;
+    }
+    
+    #showcaselist{
+        flex-direction: column;
+    }
+    
+    #repositorylist{
+        flex-direction: column;
+    }
+    
+    .div3{
+        max-width: 100%;
+    }
+    
+    .div3.div3-lines:not(:first-child){
+        border-left: 0px;
+        border-top: 1px solid #D2D2D2;
+    }
+    
+    .div3.div3-lines:nth-child(3n+2){
+        border-left: 0px;
+        border-right: 0px;
+    }
+    
+    .row{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .div3.div3-spaced{
+        width: auto;
+    }
+}
