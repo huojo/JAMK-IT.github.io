@@ -14,5 +14,14 @@
 		"name": "Freenest Project Platform",
         "description": "FreeNest is a team-oriented product development platform that is fast to deploy and easy to use.",
         "image_url": "https://pbs.twimg.com/profile_images/2342248645/freenestlogodark_400x400.png"
-	}	]
+	}, {
+		"url": "http://jargonapp.herokuapp.com",
+		"name": "Jargon-Team's game",
+        "description": "Jargon App",
+        "image_url": "https://dl.dropboxusercontent.com/u/14115930/jargon.png"
+	}
+	
+	
+	
+	]
 }
