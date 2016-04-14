@@ -5,7 +5,7 @@ $(function() {
             var img_url = val.image_url || "http://placehold.it/350x150";
             $("#showcaselist").append('\
             <div class="div3 div3-lines">\
-                <img src="' + img_url +'">\
+                <div id="showcaseimgcontainer"><img src="' + img_url +'"></div>\
                 <div class="text-item-link"><i class="fa fa-chevron-right"></i> <a href="' + val.url + '">'+val.name+'</a></div>\
                 <div class="text-item">' + val.description + '</div>\
             </div>\

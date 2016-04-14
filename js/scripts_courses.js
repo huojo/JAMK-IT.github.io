@@ -30,9 +30,9 @@ $(function() {
                 if(repoStars !== 'X'){
                     $("#repositorylist").append('\
                     <div class="div3 div3-line-under div3-spaced text-left" data-reponame="'+val.name.toLocaleLowerCase()+'">\
-                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'</div>\
                         <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\')">'+val.name+'</span></div>\
                         <div class="repoinfo">Updated '+ repoUpdated +'</div>\
+                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'</div>\
                     </div>\
                     ');
                 } else {
