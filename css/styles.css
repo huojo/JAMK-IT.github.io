@@ -153,6 +153,7 @@ html,body{
 
 .div3{
     max-width: 33%;
+    width: 33%;
     padding-top: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -296,6 +297,7 @@ html,body{
     padding: 0;
     border: 1px solid #888;
     width: 80%;
+    max-width: 800px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -342,7 +344,7 @@ html,body{
 }
 
 .modal-footer {
-    padding: 25px 0px 15px 0px;
+    padding: 25px 0px 25px 0px;
     text-align: center;
     background-color: #FFFFFF;
     color: white;
@@ -352,9 +354,24 @@ a.button{
     text-align: center;
     background-color: #00497D;
     padding: 10px 20px;
-    margin: 5px;
     color: #FFFFFF;
     text-decoration: none
+}
+
+#modalcontent h1,#modalcontent  h2,#modalcontent  h3{
+    margin-top: 1.2em;
+}
+
+#modalcontent > :first-child{
+    margin-top: 0em;
+}
+
+#modalcontent img{
+    max-width: 100%;
+}
+
+#modalcontent p {
+    margin-bottom: 1.2em;
 }
 
 
