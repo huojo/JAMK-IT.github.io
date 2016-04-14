@@ -60,7 +60,6 @@ $(function() {
     
     $("#modal").click(function(){
         $('#modal').fadeOut();
-        $('body').toggleClass('noscroll');
     });
     
     $("#modalcontent").click(function(e){
@@ -103,8 +102,7 @@ function showModal(modaldata, url){
     
     var converter = new showdown.Converter();
     var html = converter.makeHtml(modaldata);
-        
-    $('body').toggleClass('noscroll');
+    
     $('#modalcontent').html(html);
     $('#modalfooter').html('<a href="'+url+'" class="button">Continue to course page</a>');
     $('#modal').fadeIn();
