@@ -9,5 +9,10 @@
 		"name": "Reference Production Environment",
         "description": "For efficient teamwork and development we use and improve a toolchain of several software components. Our working methods are inspired by DevOps and LEAN practices.",
         "image_url": "https://n4sjamk.github.io/img/corollakuva.jpg"
-	}]
+	}, {
+		"url": "https://freenest.org",
+		"name": "Freenest Project Platform",
+        "description": "FreeNest is a team-oriented product development platform that is fast to deploy and easy to use.",
+        "image_url": "https://pbs.twimg.com/profile_images/2342248645/freenestlogodark_400x400.png"
+	}	]
 }
