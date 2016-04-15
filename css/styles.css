@@ -402,6 +402,11 @@ a.button{
     transform: scale(1.1);
 }
 
+#moreinfo{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
 @media screen and (max-width: 720px) {
     #headerbar{
         flex-direction: column;

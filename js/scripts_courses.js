@@ -33,17 +33,16 @@ $(function() {
                 if(repoStars !== 'X'){
                     $("#repositorylist").append('\
                     <div class="div3 div3-line-under div3-spaced text-left" data-reponame="' + val.name.toLocaleLowerCase() + '" data-timestamp="' + orderTime + '">\
-                        <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\')">'+val.name+'</span></div>\
+                        <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\',true)">'+val.name+'</span></div>\
                         <div class="repoinfo">Updated '+ repoUpdated +'</div>\
-                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'</div>\
+                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'<span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-info-circle" aria-hidden="true"></i> More info</span></div>\
                     </div>\
                     ');
                 } else {
                     $("#repositorylist").append('\
-                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="'+val.name.toLocaleLowerCase()+'" data-timestamp="' + orderTime + '">\
-                        <div class="repoinfo"></div>\
-                        <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\')">'+val.name+'</span></div>\
-                        <div class="repoinfo"></div>\
+                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="' + val.name.toLocaleLowerCase() + '" data-timestamp="' + orderTime + '">\
+                        <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\',true)">'+val.name+'</span></div>\
+                        <div class="repoinfo"><span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-info-circle" aria-hidden="true"></i> More info</span></div>\
                     </div>\
                     ');
                 }
@@ -82,7 +81,7 @@ $(function() {
     });
 });
 
-function getModalInfo(url, header){
+function getModalInfo(url, directlink){
     var resource = url.match(/^https:\/\/github.com\/(\S+)\/(\S+)$/);
     var manifesturl;
     
@@ -94,11 +93,22 @@ function getModalInfo(url, header){
     
     $.get(manifesturl, 
             function(data){
+                if(directlink){
+                    var targetRegex = data.match(/\[target_url=(\S+)\]/);
+                    targetRegex ? window.location.replace(targetRegex[1]) : window.location.replace(url);
+                    return;
+                }
                 showModal(data, url);
             }
         )
         .fail(function(){
-            showModal('##No special data for this course :(', url);
+
+                if(directlink){
+                    window.location.replace(url);
+                    return;
+                }
+        
+            showModal('###No special information for this course :(', url);
         });
 }
 
