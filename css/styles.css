@@ -151,6 +151,10 @@ html,body{
   border-radius: 170px;
 }
 
+.div3 a{
+    text-decoration: none;
+}
+
 .div3{
     max-width: 33%;
     width: 33%;
@@ -376,15 +380,18 @@ a.button{
     overflow: hidden;
     width: 90%;
     margin: 0px auto 20px;
-    text-align: center;
+    display: block;
+    position: relative;
 }
 
 #showcaseimgcontainer img{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    min-height: 150px;
+    max-width: 100%;
     transform: scale(1.0);
     transition: transform 0.2s ease-in-out 0s;
+    position: absolute;
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
 }
 
 #showcaseimgcontainer:hover img{

@@ -6,6 +6,7 @@ $(function() {
             var repoUpdated = 'Couldnt fetch update info';
             var repoStars = 'X';
             var repoForks = 'X';
+            var orderTime = 99999999999;
             var apiGet = $.Deferred();
             
             setTimeout(function(){
@@ -20,6 +21,7 @@ $(function() {
                     repoStars = data.stargazers_count;
                     repoForks = data.forks_count;
                     repoUpdated = $.timeago(data.pushed_at);
+                    orderTime = new Date(data.pushed_at).getTime()/1000;
                     apiGet.resolve();
                 });
             } else {
@@ -29,7 +31,7 @@ $(function() {
             $.when(apiGet).done(function(){
                 if(repoStars !== 'X'){
                     $("#repositorylist").append('\
-                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="'+val.name.toLocaleLowerCase()+'">\
+                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="' + val.name.toLocaleLowerCase() + '" data-timestamp="' + orderTime + '">\
                         <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\')">'+val.name+'</span></div>\
                         <div class="repoinfo">Updated '+ repoUpdated +'</div>\
                         <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'</div>\
@@ -37,12 +39,12 @@ $(function() {
                     ');
                 } else {
                     $("#repositorylist").append('\
-                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="'+val.name.toLocaleLowerCase()+'">\
+                    <div class="div3 div3-line-under div3-spaced text-left" data-reponame="'+val.name.toLocaleLowerCase()+'" data-timestamp="' + orderTime + '">\
                         <div class="repoinfo"></div>\
                         <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\')">'+val.name+'</span></div>\
                         <div class="repoinfo"></div>\
                     </div>\
-                    '); 
+                    ');
                 }
             });
         });
