@@ -35,14 +35,14 @@ $(function() {
                     <div class="div3 div3-line-under div3-spaced text-left" data-reponame="' + val.name.toLocaleLowerCase() + '" data-timestamp="' + orderTime + '">\
                         <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\',true)">'+val.name+'</span></div>\
                         <div class="repoinfo">Updated '+ repoUpdated +'</div>\
-                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'<span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-info-circle" aria-hidden="true"></i> More info</span></div>\
+                        <div class="repoinfo"><i class="fa fa-star" aria-hidden="true"></i> '+ repoStars +' <i class="fa fa-code-fork" aria-hidden="true"></i> ' + repoForks +'<span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-eye" aria-hidden="true"></i></span></div>\
                     </div>\
                     ');
                 } else {
                     $("#repositorylist").append('\
                     <div class="div3 div3-line-under div3-spaced text-left" data-reponame="' + val.name.toLocaleLowerCase() + '" data-timestamp="' + orderTime + '">\
                         <div class="text-item-link text-left no-margin"><i class="fa fa-chevron-right"></i> <span class="repolink" onclick="getModalInfo(\''+val.url+'\',true)">'+val.name+'</span></div>\
-                        <div class="repoinfo"><span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-info-circle" aria-hidden="true"></i> More info</span></div>\
+                        <div class="repoinfo"><span id="moreinfo" onclick="getModalInfo(\''+val.url+'\')"> <i class="fa fa-eye" aria-hidden="true"></i> </span></div>\
                     </div>\
                     ');
                 }
