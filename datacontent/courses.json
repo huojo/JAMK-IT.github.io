@@ -29,8 +29,8 @@
 	},{
         "url": "https://github.com/JAMK-IT/template-course",
         "name": "Template course"
-
-
-
-    }]
+    	}, {
+		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
+		"name": "IIO12110 - ohjelmistotuotannon käytännöt"
+	}]
 }
