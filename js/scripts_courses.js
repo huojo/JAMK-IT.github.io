@@ -6,12 +6,13 @@ $(function() {
             var repoUpdated = 'Couldnt fetch update info';
             var repoStars = 'X';
             var repoForks = 'X';
-            var orderTime = 99999999999;
+            var orderTime = 0;
             var apiGet = $.Deferred();
             
+            //make sure that we will display something if getJSON fails or stalls
             setTimeout(function(){
                 apiGet.resolve();
-            }, 1500);
+            }, 2000);
             
             var res = val.url.match(/^https:\/\/github.com\/(\S+)\/(\S+)$/);
             
@@ -46,6 +47,14 @@ $(function() {
                     </div>\
                     ');
                 }
+                
+                //This is a bit heavy way of displaying courses in update order
+                //maybe something like this is beter? http://james.padolsey.com/javascript/sorting-elements-with-jquery/
+                $("#repositorylist").html($('.div3').sort(function (a, b) {
+                      var contentA =parseInt( $(a).data('timestamp'));
+                      var contentB =parseInt( $(b).data('timestamp'));
+                      return (contentA > contentB) ? -1 : (contentA < contentB) ? 1 : 0;
+                   }));
             });
         });
     });

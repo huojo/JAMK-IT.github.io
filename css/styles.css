@@ -15,12 +15,16 @@ html,body{
 }
 
 .container{
+    min-height: 45vh;
     max-width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-flow: column;
     margin: 0 auto;
+}
+
+.container.container-middle{
+    justify-content: center;
 }
 
 .content-full-width{

@@ -19,6 +19,11 @@
 		"name": "Jargon-Team's game",
         "description": "Jargon App",
         "image_url": "https://dl.dropboxusercontent.com/u/14115930/jargon.png"
-	}
+	}, {
+        "url": "https://github.com/ahvonenj/Softwareproject",
+        "name": "Softwareproject",
+        "description": "A game created using SFML library and C/C++ programming for object-oriented programming course.",
+        "image_url": "https://github.com/ahvonenj/Softwareproject/raw/master/github_resources/multiplayer.JPG?raw=true"
+    }
 	]
 }
