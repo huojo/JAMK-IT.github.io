@@ -421,6 +421,7 @@ a.button{
     
     .div3{
         max-width: 100%;
+        width: 100%;
     }
     
     .div3.div3-lines:not(:first-child){
@@ -440,5 +441,9 @@ a.button{
     
     .div3.div3-spaced{
         width: auto;
+    }
+    
+    #jumbo{
+        height: 250px;
     }
 }
