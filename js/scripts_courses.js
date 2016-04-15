@@ -95,7 +95,7 @@ function getModalInfo(url, directlink){
             function(data){
                 if(directlink){
                     var targetRegex = data.match(/\[target_url=(\S+)\]/);
-                    targetRegex ? window.location.replace(targetRegex[1]) : window.location.replace(url);
+                    targetRegex ? window.location.href = targetRegex[1] : window.location.href = url;
                     return;
                 }
                 showModal(data, url);
@@ -104,7 +104,7 @@ function getModalInfo(url, directlink){
         .fail(function(){
 
                 if(directlink){
-                    window.location.replace(url);
+                    window.location.href = url;
                     return;
                 }
         
