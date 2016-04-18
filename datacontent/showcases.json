@@ -24,6 +24,14 @@
         "name": "Softwareproject",
         "description": "A game created using SFML library and C/C++ programming for object-oriented programming course.",
         "image_url": "https://github.com/ahvonenj/Softwareproject/raw/master/github_resources/multiplayer.JPG?raw=true"
-    }
+        }, {
+        "url": "https://www.youtube.com/watch?v=DdA2JbVJHvs",
+        "name": "Heavens Punishment",
+        "description": "A game created as Software Engineers Thesis work",
+        "image_url": "https://i.ytimg.com/vi_webp/DdA2JbVJHvs/mqdefault.webp"
+        }
+
+
+
 	]
 }
