@@ -42,7 +42,7 @@
         "image_url": "https://mattij.com/img/robot.png"
         }, {
         "url": "https://github.com/mikkopoyhonen/noisetester",
-        "name": "Noise Generator (Thesis work) by MikkoP for N4S@JAMK-project",
+        "name": "Noise Generator (Thesis work) by MikkoP in co-operation with N4S@JAMK-team",
         "description": "Noise Generator - a tool to simulate common network problems for your service under development",
         "image_url": "http://n4sjamk.github.io/img/features/noise.png"
         }
