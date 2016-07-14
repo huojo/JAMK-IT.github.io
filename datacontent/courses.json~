@@ -1,22 +1,25 @@
 {
 	"repositories": [{
+		"url": "https://github.com/JAMK-IT/IIZP2010-system-project",
+		"name": "IIZP2010 Järjestelmäprojekti"
+	}, {
 		"url": "https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing",
 		"name": "TT0S0100 Ohjelmistosuunnittelu ja testaus"
-	}, {
-		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
-		"name": "IIO12110 ohjelmistotuotannon käytannöt"
-	}, {
-		"url": "https://github.com/JAMK-IT/IIO12200-ohjelmistoprojekti",
-		"name": "IIO12200 ohjelmistoprojekti"
 	}, {
 		"url": "https://github.com/JAMK-IT/IIO123000-testing-course",
 		"name": "IIO123000 testing course"
 	}, {
-		"url": "https://github.com/JAMK-IT/TTOS0800-Ohjelmistoprojekti",
-		"name": "TTOS0800 Ohjelmistoprojekti"
+		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
+		"name": "IIO12110 ohjelmistotuotannon käytannöt"
 	}, {
 		"url": "https://github.com/JAMK-IT/TTO0900-Jarjestelmatestaus",
 		"name": "TTO0900-Jarjestelmatestaus"
+	}, {
+		"url": "https://github.com/JAMK-IT/TTOS0800-Ohjelmistoprojekti",
+		"name": "TTOS0800 Ohjelmistoprojekti"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO12200-ohjelmistoprojekti",
+		"name": "IIO12200 ohjelmistoprojekti"
 	}, {
 		"url": "https://github.com/JAMK-IT/TTKS0300-script-programming",
 		"name": "TTKS0300 - Script Programming"
@@ -35,5 +38,11 @@
 	}, {
 		"url": "https://github.com/JAMK-IT/DOC007-reference-of-the-product-line",
 		"name": "DOC007-reference-of-the-product-line"
- 	}]
+	},{
+        "url": "https://github.com/JAMK-IT/template-course",
+        "name": "Template course"
+    	}, {
+		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
+		"name": "IIO12110 - ohjelmistotuotannon käytännöt"
+	}]
 }
