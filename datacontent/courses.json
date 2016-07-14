@@ -3,15 +3,6 @@
 		"url": "https://github.com/JAMK-IT/TTOS0100-software-desing-and-testing",
 		"name": "TTOS0100 Ohjelmistosuunnittelu ja testaus"
 	}, {
-		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
-		"name": "IIO12110 ohjelmistotuotannon käytannöt"
-	}, {
-		"url": "https://github.com/JAMK-IT/IIO12200-ohjelmistoprojekti",
-		"name": "IIO12200 ohjelmistoprojekti"
-	}, {
-		"url": "https://github.com/JAMK-IT/IIO123000-testing-course",
-		"name": "IIO123000 testing course"
-	}, {
 		"url": "https://github.com/JAMK-IT/TTOS0800-Ohjelmistoprojekti",
 		"name": "TTOS0800 Ohjelmistoprojekti"
 	}, {
@@ -35,5 +26,14 @@
 	}, {
 		"url": "https://github.com/JAMK-IT/DOC007-reference-of-the-product-line",
 		"name": "DOC007-reference-of-the-product-line"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO12110-ohjelmistotuotannon_kaytannot",
+		"name": "IIO12110 ohjelmistotuotannon käytannöt"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO12200-ohjelmistoprojekti",
+		"name": "IIO12200 ohjelmistoprojekti"
+	}, {
+		"url": "https://github.com/JAMK-IT/IIO123000-testing-course",
+		"name": "IIO123000 testing course"
  	}]
 }
